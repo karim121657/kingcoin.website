@@ -1,0 +1,19 @@
+KingCoin Whitepaper (Simplified Version)
+-----------------------------------------
+Project Name: KingCoin
+Blockchain: Binance Smart Chain / opBNB
+Total Supply: 100,000,000
+Decimals: 18
+Utility: Used in Tribe of Kings Game + Crypto Trading
+
+Objectives:
+- Create a unified token for gamers and traders.
+- In-game use for weapons, lands, and upgrades.
+- Tradeable on BSC and future CEX/DEX.
+- Play-to-earn utility & deflationary model.
+
+Roadmap:
+- Q2 2025: Website + Logo + Smart Contract
+- Q3 2025: Beta Game Launch + Airdrop
+- Q4 2025: Listing on PancakeSwap
+- Q1 2026: NFT Marketplace & Mobile App

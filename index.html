@@ -19,17 +19,13 @@
     header img {
       width: 100px;
     }
-    h1 {
-      font-size: 2.5em;
-      margin: 0.5em 0;
+    h1, h2 {
+      color: #ffffff;
     }
     section {
       padding: 30px;
       max-width: 900px;
       margin: auto;
-    }
-    h2 {
-      color: #ffffff;
     }
     .highlight {
       color: #f1c40f;
@@ -49,6 +45,28 @@
       border-radius: 5px;
       font-weight: bold;
     }
+    form input, form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      font-size: 1em;
+    }
+    form button {
+      padding: 10px;
+      background-color: #f1c40f;
+      border: none;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #f1c40f;
+      padding: 8px;
+    }
   </style>
 </head>
 <body>
@@ -60,63 +78,43 @@
 
   <section>
     <h2>📈 What is King Coin?</h2>
-    <p>King Coin is a decentralized token designed for both <span class="highlight">gamers</span> and <span class="highlight">traders</span>. Use it to unlock exclusive items in the <strong>Tribe of Kings</strong> game, or trade it on leading crypto platforms.</p>
-    <ul>
-      <li>Chain: Binance Smart Chain / opBNB</li>
-      <li>Supply: 100,000,000</li>
-      <li>Decimals: 18</li>
-      <li>Mintable: Yes</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>⚔️ In-Game Power</h2>
-    <p>Dominate in <strong>Tribe of Kings</strong> by using King Coin for weapons, armor, lands and upgrades. The more you own, the stronger you grow.</p>
-
-    <h2>📉 Market Trading</h2>
-    <p>Trade King Coin on exchanges. It's <span class="highlight">secure</span>, <span class="highlight">fast</span>, and built for <strong>real-world utility</strong>.</p>
+    <p>King Coin is a decentralized token for both <span class="highlight">gamers</span> and <span class="highlight">traders</span>.</p>
   </section>
 
   <section>
     <h2>🎮 Play to Earn</h2>
-    <p>
-      اب کھیلو اور کماؤ! <strong>Tribe of Kings</strong> گیم میں آپ King Coin استعمال کر کے ہتھیار، زمینیں اور خاص صلاحیتیں حاصل کر سکتے ہیں۔
-      جتنا زیادہ آپ کھیلیں، اتنا ہی زیادہ آپ کمائیں گے!
-    </p>
     <ul>
-      <li>⚔️ ہر میچ میں جیت پر Coin حاصل کریں</li>
-      <li>🏆 ٹورنامنٹس میں حصہ لیں اور بڑے انعامات جیتیں</li>
-      <li>🎁 Daily Missions مکمل کریں اور بونس King Coins پائیں</li>
-      <li>🛒 Coin سے خاص skins, items اور maps خریدیں</li>
-    </ul>
-    <p><strong>یہ صرف کھیل نہیں، یہ کمائی کا نیا طریقہ ہے!</strong></p>
-  </section>
-
-  <section>
-    <h2>💎 Why Choose King Coin?</h2>
-    <ul>
-      <li>Inspired by tribal resilience and unity</li>
-      <li>Use in gaming + trading = real utility</li>
-      <li>Designed to be deflationary and community-powered</li>
+      <li>⚔️ Win matches to earn King Coin</li>
+      <li>🎁 Complete missions for bonus</li>
+      <li>🛒 Buy items using King Coin</li>
     </ul>
   </section>
 
   <section>
-    <h2>🌐 Join the Tribe</h2>
-    <p>Connect with us on:</p>
-    <ul>
-      <li>Telegram</li>
-      <li>Twitter</li>
-      <li>Discord</li>
-      <li>YouTube</li>
-    </ul>
-    <a href="#" class="button">Join Now</a>
+    <h2>📜 Whitepaper</h2>
+    <p>Download and read our whitepaper to understand the project vision:</p>
+    <a href="KingCoin_Whitepaper.txt" class="button" download>Download Whitepaper</a>
   </section>
 
   <section>
-    <h2>📢 Contact Us</h2>
-    <p>For partnerships or community collaboration: <br />
-    <strong>your@email.com</strong></p>
+    <h2>🗺️ Roadmap</h2>
+    <table>
+      <tr><th>Quarter</th><th>Milestone</th></tr>
+      <tr><td>Q2 2025</td><td>Website, Logo, Smart Contract</td></tr>
+      <tr><td>Q3 2025</td><td>Beta Game Launch, Airdrop</td></tr>
+      <tr><td>Q4 2025</td><td>Token Listing, Marketing</td></tr>
+      <tr><td>Q1 2026</td><td>NFTs + Mobile Game</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>📩 Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message..." rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <footer>
