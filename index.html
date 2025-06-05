@@ -58,7 +58,32 @@
       color: #f1c40f;
       text-decoration: none;
     }
+    .lang-btns {
+      text-align: center;
+      margin: 20px;
+    }
+    .lang-btns button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      background-color: #f1c40f;
+      border: none;
+      color: #000;
+    }
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
   </style>
+  <script>
+    function switchLang(langId) {
+      document.querySelectorAll('.lang').forEach(e => e.classList.remove('active'));
+      document.getElementById(langId).classList.add('active');
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -67,50 +92,28 @@
     <p><em>The Power of the Tribe, Now in Your Wallet</em></p>
   </header>
 
-  <section>
-    <h2>📈 What is King Coin?</h2>
-    <p>King Coin is a decentralized token for both <span class="highlight">gamers</span> and <span class="highlight">traders</span>.</p>
-  </section>
+  <div class="lang-btns">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('ur')">اردو</button>
+  </div>
 
-  <section>
-    <h2>🎮 Play to Earn</h2>
-    <ul>
-      <li>⚔️ Win matches to earn King Coin</li>
-      <li>🎁 Complete missions for bonus</li>
-      <li>🛒 Buy items using King Coin</li>
-    </ul>
-  </section>
+  <div id="en" class="lang active">
+    <section><h2>📈 What is King Coin?</h2><p>King Coin is a decentralized token for gamers and traders.</p></section>
+    <section><h2>🎮 Play to Earn</h2><ul><li>⚔️ Win matches to earn King Coin</li><li>🎁 Complete missions for bonus</li><li>🛒 Buy items using King Coin</li></ul></section>
+    <section><h2>📜 Whitepaper</h2><a href="KingCoin_Whitepaper.txt" class="button" download>Download Whitepaper</a></section>
+    <section><h2>🗺️ Roadmap</h2><table><tr><th>Quarter</th><th>Milestone</th></tr><tr><td>Q2 2025</td><td>Website, Logo, Smart Contract</td></tr><tr><td>Q3 2025</td><td>Beta Game Launch, Airdrop</td></tr><tr><td>Q4 2025</td><td>Token Listing, Marketing</td></tr><tr><td>Q1 2026</td><td>NFTs + Mobile Game</td></tr></table></section>
+    <section><h2>📩 Contact Us</h2><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdK0t2Ql4J0AeAV6PlUabCl5qFkSuhhF_HNDN1-Yde9K9_G8g/viewform?embedded=true" width="100%" height="520"></iframe></section>
+    <section><h2>🌐 Join the Community</h2><ul><li>📢 <a href="https://t.me/kingcoinofficial">Join us on Telegram</a></li><li>🐦 <a href="https://twitter.com/kingcoinproject">Follow us on Twitter</a></li></ul></section>
+  </div>
 
-  <section>
-    <h2>📜 Whitepaper</h2>
-    <p>Download and read our whitepaper to understand the project vision:</p>
-    <a href="KingCoin_Whitepaper.txt" class="button" download>Download Whitepaper</a>
-  </section>
-
-  <section>
-    <h2>🗺️ Roadmap</h2>
-    <table>
-      <tr><th>Quarter</th><th>Milestone</th></tr>
-      <tr><td>Q2 2025</td><td>Website, Logo, Smart Contract</td></tr>
-      <tr><td>Q3 2025</td><td>Beta Game Launch, Airdrop</td></tr>
-      <tr><td>Q4 2025</td><td>Token Listing, Marketing</td></tr>
-      <tr><td>Q1 2026</td><td>NFTs + Mobile Game</td></tr>
-    </table>
-  </section>
-
-  <section>
-    <h2>📩 Contact Us</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiUW2WnIAqOVgmEoDmtX6HHIdKnMvgoZPq7fieUSk5KQhG9g/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </section>
-
-  <section>
-    <h2>🌐 Join the Community</h2>
-    <p>Connect with us on social media and stay updated:</p>
-    <ul>
-      <li>📢 <a href="https://t.me/kingcoinofficial" target="_blank">Join us on Telegram</a></li>
-      <li>🐦 <a href="https://twitter.com/kingcoinproject" target="_blank">Follow us on Twitter</a></li>
-    </ul>
-  </section>
+  <div id="ur" class="lang">
+    <section><h2>📈 کنگ کوائن کیا ہے؟</h2><p>کنگ کوائن گیمرز اور ٹریڈرز کے لیے ایک غیر مرکزی ٹوکن ہے۔</p></section>
+    <section><h2>🎮 کھیل کر کمائیں</h2><ul><li>⚔️ میچ جیتیں اور کنگ کوائن حاصل کریں</li><li>🎁 مشنز مکمل کریں اور بونس لیں</li><li>🛒 کنگ کوائن سے اشیاء خریدیں</li></ul></section>
+    <section><h2>📜 وائٹ پیپر</h2><a href="KingCoin_Whitepaper.txt" class="button" download>وائٹ پیپر ڈاؤنلوڈ کریں</a></section>
+    <section><h2>🗺️ روڈمیپ</h2><table><tr><th>مدت</th><th>منصوبہ</th></tr><tr><td>Q2 2025</td><td>ویب سائٹ، لوگو، اسمارٹ کانٹریکٹ</td></tr><tr><td>Q3 2025</td><td>بیٹا گیم لانچ، ایئر ڈراپ</td></tr><tr><td>Q4 2025</td><td>ٹوکن لسٹنگ، مارکیٹنگ</td></tr><tr><td>Q1 2026</td><td>NFTs اور موبائل گیم</td></tr></table></section>
+    <section><h2>📩 رابطہ کریں</h2><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdK0t2Ql4J0AeAV6PlUabCl5qFkSuhhF_HNDN1-Yde9K9_G8g/viewform?embedded=true" width="100%" height="520"></iframe></section>
+    <section><h2>🌐 سوشل میڈیا</h2><ul><li>📢 <a href="https://t.me/kingcoinofficial">ٹیلیگرام پر شامل ہوں</a></li><li>🐦 <a href="https://twitter.com/kingcoinproject">ٹوئٹر پر فالو کریں</a></li></ul></section>
+  </div>
 
   <footer>
     <p><strong>King Coin – Strength. Honor. Legacy.</strong></p>
